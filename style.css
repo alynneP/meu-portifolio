@@ -1,0 +1,102 @@
+/* Estilos gerais para um bom começo */
+body {
+    font-size: large;
+    margin: 0;
+    color: #ddd;
+    background: linear-gradient(to right, #000000, #5a108f);
+    padding: 20px;
+    margin: 20px;
+}
+/*to right, rgb(241, 37, 37), rgb(230, 230, 148*/
+h2, .sobre-container{
+    color: #f4f4f4;
+}
+header {
+    background-color: #cda4e4;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 0 2rem; /* Adiciona espaçamento nas laterais */
+    border-radius: 15px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    margin-right: 1rem;
+}
+nav h1,
+nav ul li a {
+    -webkit-background-clip: text;
+    text-decoration: none;
+    background: linear-gradient(to right, #000000, #5a108f);
+    background-clip: text;
+    color: transparent;
+    cursor: pointer; /* Indica que são clicáveis (se for o caso) */
+    transition: transform 0.3s ease;
+}
+.sobre-container{
+    display: flex;
+    align-items: center;
+}
+.perfil{
+    margin-right: 1em;
+}
+.perfil img{
+    width: 250px;
+    border-radius: 15px;
+    border: 2px solid #cda4e4;
+}
+#carrossel {
+    display: flex; 
+    flex-direction: column; /* Organiza os itens de cima para baixo */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Estilo para a imagem principal (a primeira imagem dentro da seção) */
+#carrossel > img:first-of-type {
+    width: 700px; /* Define a largura da imagem principal para 80% do container */
+    max-width: 900px; /* Limita o tamanho máximo para não ficar exageradamente grande em telas amplas */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Adiciona cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Espaço abaixo da imagem principal */
+    border: 2px solid #cda4e4;
+}
+
+/* Estilos para o container das imagens menores */
+.img-carrossel {
+
+    cursor: pointer;
+    display: flex; /* Usa Flexbox para colocar as miniaturas em linha */
+    justify-content: center; /* Centraliza as miniaturas */
+    gap: 10px; /* Espaço entre as miniaturas */
+    flex-wrap: wrap; /* Permite que as miniaturas quebrem a linha em telas menores */
+
+    max-width: 1500px; /* Alinha a largura máxima com a imagem principal */
+}
+
+/* Estilos para as imagens dentro do container img-carrossel (as miniaturas) */
+.img-carrossel img {
+    width: 200px; 
+    height: 150px;
+    object-fit: cover; 
+    border: 2px solid #cda4e4;
+    border-radius: 4px; /* Cantos arredondados */
+    cursor: pointer; /* Indica que são clicáveis (se for o caso) */
+    transition: transform 0.3s ease; /* Efeito de transição */
+}
+
+.img-carrossel img:hover {
+    transform: scale(1.05); /* Pequeno zoom ao passar o mouse */
+}
+
